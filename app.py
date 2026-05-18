@@ -1,3 +1,3 @@
-from app.main import dataframe
+from app.main import Dataframe
 
-print(dataframe('data.csv'))
+print(Dataframe('data.csv').read_csv())
