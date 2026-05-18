@@ -1,7 +1,9 @@
 import pandas as pd
 
-def dataframe(imported_dataframe):
+class Dataframe:
+    def __init__(self, imported_dataframe):
+        self.imported_dataframe = imported_dataframe
 
-    df = pd.read_csv(imported_dataframe)
-
-    return df
+    def read_csv(self):
+        df = pd.read_csv(self.imported_dataframe)
+        return df
